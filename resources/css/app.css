@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table1{
+    @apply mt-4 table-auto w-full border-collapse border border-gray-300;
+}
+
+.custom_th{
+    @apply border border-gray-300 px-4 py-2 text-left;
+    text-align: center
+}
+
+.custom_td{
+    @apply border border-gray-300 px-4 py-2;
+    text-align: center;
+}
+
+.btn-blue{
+    @apply bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600;
+}
+.btn-red{
+    @apply bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600;
+}
+.btn-green{
+    @apply bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600;
+}
+.btn-orange{
+    @apply bg-orange-500 text-white px-2 py-1 rounded hover:bg-orange-600;
+}
+.btn-abu{
+    @apply bg-gray-500 text-white px-2 py-1 rounded hover:bg-gray-600;
+}
+
+.header-h3{
+    @apply text-xl font-bold mb-3 border-b pb-3;
+}
+
+/* Pagination link umum */
+ul.pagination li a,
+ul.pagination li span {
+  @apply bg-white text-gray-800 border border-gray-300 px-3 py-1 rounded hover:bg-gray-100;
+}
+
+/* Aktif (halaman saat ini) */
+ul.pagination li span[aria-current="page"] {
+  @apply bg-blue-600 text-white font-bold;
+}
